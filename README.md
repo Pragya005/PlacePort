@@ -2,69 +2,6 @@
 
 A full-stack placement portal with 3 roles: **Student**, **Placement Cell Faculty**, and **Company**.
 
----
-
-## Project Structure
-
-```
-placement-portal/
-├── backend/
-│   ├── config/db.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── studentController.js
-│   │   ├── facultyController.js
-│   │   ├── companyController.js
-│   │   └── jobController.js
-│   ├── middleware/auth.js
-│   ├── models/
-│   │   ├── Student.js
-│   │   ├── Faculty.js
-│   │   ├── Company.js
-│   │   └── Job.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── student.js
-│   │   ├── faculty.js
-│   │   ├── company.js
-│   │   └── jobs.js
-│   ├── seeders/facultySeeder.js
-│   ├── .env
-│   ├── server.js
-│   └── package.json
-└── frontend/
-    ├── public/index.html
-    ├── src/
-    │   ├── context/AuthContext.js
-    │   ├── utils/api.js
-    │   ├── components/
-    │   │   ├── Sidebar.js
-    │   │   └── ProtectedRoute.js
-    │   ├── pages/
-    │   │   ├── Login.js
-    │   │   ├── Register.js
-    │   │   ├── student/
-    │   │   │   ├── Dashboard.js
-    │   │   │   ├── ProfileSetup.js
-    │   │   │   ├── BrowseJobs.js
-    │   │   │   └── AppliedJobs.js
-    │   │   ├── faculty/
-    │   │   │   ├── Dashboard.js
-    │   │   │   ├── Students.js
-    │   │   │   ├── Jobs.js
-    │   │   │   ├── Companies.js
-    │   │   │   └── RegisterCompany.js
-    │   │   └── company/
-    │   │       ├── Dashboard.js
-    │   │       ├── PostJob.js
-    │   │       └── MyJobs.js
-    │   ├── App.js
-    │   ├── index.js
-    │   └── index.css
-    └── package.json
-```
-
----
 
 ## Prerequisites
 
