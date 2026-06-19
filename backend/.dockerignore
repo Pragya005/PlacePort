@@ -1,0 +1,41 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+yarn-error.log
+logs
+*.log
+
+# build outputs
+dist
+build
+out
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# version control
+.git
+.gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (optional safety)
+Dockerfile
+docker-compose.yml
+
+# editor / IDE
+.vscode
+.idea
+
+# test / coverage
+coverage
+
+# cache
+.cache
+.tmp
