@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const Student = require('../models/Student');
 const Faculty = require('../models/Faculty');
 const Company = require('../models/Company');
-
+//
 const generateToken = (id, role) => {
   return jwt.sign({ id, role }, process.env.JWT_SECRET, { expiresIn: '7d' });
 };
