@@ -56,3 +56,5 @@ Thumbs.db
 *.lock
 WiredTiger*
 diagnostic.data/
+
+node_modules/
