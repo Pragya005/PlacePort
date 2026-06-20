@@ -1,11 +1,11 @@
 services:
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    networks:
-      - placeport
-  
+   # frontend:
+    #  build: ./frontend
+       # ports:
+       #   - "3000:3000"
+       # networks:
+       #   - placeport
+    
   backend:
     build: ./backend
     ports: 
@@ -16,18 +16,7 @@ services:
       - mongodb
     env_file:
       - ./backend/.env
-
-  mongodb:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo-data:/data/db
   
 networks:
     placeport:
       driver: bridge
-
-volumes:
-    mongo-data:
-      driver: local
