@@ -12,8 +12,6 @@ services:
       - "5000:5000"
     networks:
       - placeport
-    depends_on:
-      - mongodb
     env_file:
       - ./backend/.env
   
