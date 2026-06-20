@@ -3,6 +3,13 @@
 A full-stack **College Placement Management System** built using the **MERN Stack**. The application streamlines campus recruitment by providing separate portals for **Students**, **Placement Cell Faculty**, and **Companies**.
 
 ---
+Website hosted on - https://placeport-wggj.onrender.com
+
+Images available on docker hub
+docker.io/pragyavarshney/placementportal-frontend
+docker.io/pragyavarshney/placementportal-backend
+
+Database hosted on Mongodb and deployed using **github actions + render**
 
 ## Features
 
