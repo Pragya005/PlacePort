@@ -11,16 +11,25 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    const savedRole = localStorage.getItem('role');
-    const savedUser = localStorage.getItem('user');
-    if (token && savedUser) {
+  const token = localStorage.getItem("token");
+  const savedRole = localStorage.getItem("role");
+  const savedUser = localStorage.getItem("user");
+
+  if (token && savedUser && savedUser !== "undefined") {
+    try {
       setUser(JSON.parse(savedUser));
       setRole(savedRole);
-      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+      axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    } catch (err) {
+      console.error("Invalid user data in localStorage", err);
+      localStorage.removeItem("user");
+      localStorage.removeItem("token");
+      localStorage.removeItem("role");
     }
-    setLoading(false);
-  }, []);
+  }
+
+  setLoading(false);
+}, []);
 
   const login = (token, role, user) => {
     localStorage.setItem('token', token);
